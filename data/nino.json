@@ -1,0 +1,17 @@
+{
+    "name": "Nino",
+    "unit_type": "Infantry",
+    "stats": {
+        "hp": 33,
+        "attack": 46,
+        "speed": 36,
+        "defense": 19,
+        "resistance": 29
+    },
+    "skills": [
+            "Draw Back",
+            "Hone Attack 3",
+            "Resistance +3"
+    ],
+    "weapon": "Gronnblade"
+}

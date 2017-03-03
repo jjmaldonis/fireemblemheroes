@@ -1,0 +1,18 @@
+{
+    "name": "Lucina",
+    "unit_type": "Infantry",
+    "stats": {
+        "hp": 43,
+        "attack": 50,
+        "speed": 36,
+        "defense": 25,
+        "resistance": 19
+    },
+    "skills": [
+            "Aether",
+            "Luna",
+            "Spur Attack 3",
+            "Defiant Speed 3"
+    ],
+    "weapon": "Falchion"
+}
