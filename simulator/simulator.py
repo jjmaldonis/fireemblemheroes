@@ -11,7 +11,10 @@ class Simulator(object):
             self.hero2.reset()
 
     def run_turn(self):
+        # TODO I think I should split this into self.phase1 and self.phase2
+        #  That would separate the two blocks of code below more clearly.
         self._turn += 1
+
         print("{hero} attacks!".format(hero=self.hero1.name))
         self.hero1.attack_target(self.hero2)
         if self.hero2.weapon.range == self.hero1.weapon.range:  # return attack
@@ -45,6 +48,7 @@ class Simulator(object):
 
 class GameState(object):
     def __init__(self, hero1, hero2, turn):
+        # Do we need more stuff here? What else is there?
         self.hero1 = hero1
         self.hero2 = hero2
         self.turn = turn

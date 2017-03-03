@@ -89,6 +89,7 @@ class Hero(object):
         self.stats = stats
         self.weapon = weapon
         self.skills = skills
+
         self.buffs = []  # buffs get added / removed manually
 
         # TODO For now, assume all bonuses/penalties are +- 3 only even tho that's not true
@@ -177,6 +178,7 @@ class Hero(object):
     def reset(self):
         """Resets the hero for a new simulation."""
         self.stats.current_hp = self.stats.hp
+        self.buffs = []
 
 
 # Load all the heros in the data directory
