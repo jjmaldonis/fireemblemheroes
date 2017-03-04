@@ -1,0 +1,17 @@
+{
+    "name": "Robin (M)",
+    "unit_type": "Infantry",
+    "stats": {
+        "hp": 40,
+        "attack": 40,
+        "speed": 29,
+        "defense": 29,
+        "resistance": 22
+    },
+    "skills": [
+        "Bonfire",
+        "Spur Defense 3",
+        "Defiant Speed 3"
+    ],
+    "weapon": "Blarraven+"
+}

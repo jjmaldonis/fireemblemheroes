@@ -4,27 +4,29 @@ from simulator.hero import all_heroes
 from simulator.simulator import Simulator
 
 
-nino = all_heroes["Nino"] #Hero.from_json(filename=os.path.join(cwd, "data/nino.json"))
-lucina = all_heroes["Lucina"] #Hero.from_json(filename=os.path.join(cwd, "data/lucina.json"))
+#hero1 = all_heroes["Nino"]
+#hero2 = all_heroes["Lucina"]
+hero1 = all_heroes["Robin (M)"]
+hero2 = all_heroes["Takumi"]
+#hero1.stats.attack = 20
+#hero2.stats.attack = 20
 
-print(nino)
-print(nino.stats)
-print(nino.skills)
 
+print(hero1)
+print(hero1.stats)
+print(hero1.skills)
+print()
+print(hero2)
+print(hero2.stats)
+print(hero2.skills)
+print()
 print()
 
-print(lucina)
-print(lucina.stats)
-print(lucina.skills)
-
-print()
-print()
-
-sim = Simulator(nino, lucina)
+sim = Simulator(hero1, hero2)
 sim.run()
 
 print()
 print()
 
-sim = Simulator(lucina, nino)
+sim = Simulator(hero2, hero1)
 sim.run()
